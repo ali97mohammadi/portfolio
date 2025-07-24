@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – M&A Smartwatch</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+  
+
+<body>
+  <header>
+    <h1>Portfolio – M&A Smartwatch</h1>
+    <p>Site e-commerce complet de montres connectées avec gestion de panier, commandes, comptes clients et administration.</p>
+  </header>
+
+  <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    <ul id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#features">Fonctionnalités</a></li>
+      <li><a href="#technologies">Technologies</a></li>
+      <li><a href="#admin">Admin</a></li>
+      <li><a href="#client">Client</a></li>
+    </ul>
+  </nav>
+  <div class="container" >
+  <!-- À propos -->
+  <section id="about" class="section">
+    <h2>À propos du projet</h2>
+    <p>
+      <strong>M&A Smartwatch</strong> est un site e-commerce développé en PHP, SQL, HTML, CSS et JavaScript. Il permet aux utilisateurs d’explorer des montres connectées, d’ajouter des articles au panier, de passer commande, et de gérer leur compte client.
+      Une interface d'administration sécurisée permet de suivre les ventes, gérer les produits et les messages clients.
+    </p>
+  </section>
+
+  <!-- Fonctionnalités -->
+  <section id="features" class="section">
+    <h2>Fonctionnalités principales</h2>
+      <ul class="features">
+        <li>Navigation fluide à travers les catégories de montres.</li>
+        <li>Ajout au panier avec gestion dynamique des quantités.</li>
+        <li>Passation de commande sécurisée avec confirmation.</li>
+        <li>Création et gestion du compte client.</li>
+        <li>Historique des commandes disponibles dans le profil utilisateur.</li>
+        <li>Formulaire de contact pour assistance ou questions.</li>
+        <li>Back-office administrateur pour gestion des produits et des messages.</li>
+      </ul>
+
+    </section>
+
+    <!-- Section Technologies utilisées -->
+    <section id="technologies" class="section">
+      <h2>Technologies utilisées</h2>
+      <div class="technologies">
+        <div class="tech-item"><i class="fab fa-html5"></i>HTML5</div>
+        <div class="tech-item"><i class="fab fa-css3-alt"></i>CSS3</div>
+        <div class="tech-item"><i class="fab fa-js-square"></i>JavaScript</div>
+        <div class="tech-item"><i class="fab fa-php"></i>PHP (Backend)</div>
+        <div class="tech-item"><i class="fas fa-database"></i>MySQL (Base de données)</div>
+        <div class="tech-item"><i class="fas fa-laptop-code"></i>AJAX (Interactions dynamiques)</div>
+        <div class="tech-item"><i class="fas fa-shield-alt"></i>Sessions & Sécurité</div>
+        <div class="tech-item"><i class="fas fa-mobile-alt"></i>Design Responsive</div>
+      </div>
+    </section>
+
+  <!-- Partie Admin -->
+  <section id="admin" class="section">
+    <h2>Partie Admin</h2>
+    <p>
+      La partie administrateur permet de gérer l’ensemble du site e-commerce : gestion des produits, des clients, des commandes et des messages reçus via le formulaire de contact.
+      L'interface admin est sécurisée via un système d’authentification.
+    </p>
+
+    <ul class="features">
+      <li>Connexion admin sécurisée</li>
+      <li>Gestion des produits (ajout, modification, suppression)</li>
+      <li>Suivi et traitement des commandes</li>
+      <li>Consultation des messages clients</li>
+      <li>Gestion des comptes clients</li>
+    </ul>
+
+      <div class="video-container">
+        <video controls width="100%" poster="images/projet 2/admin/produit.png">
+          <source src="images/projet 2/admin.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la vidéo HTML5.
+        </video>
+      </div>
+
+
+    <div class="gallery">
+      <img src="images/projet 2/admin/produit.png" alt="Gestion des produits" data-category="admin" onclick="openLightbox(this)" />
+      <img src="images/projet 2/admin/commandes.png" alt="Gestion des commandes" data-category="admin" onclick="openLightbox(this)" />
+      <img src="images/projet 2/admin/clients.png" alt="Gestion des clients" data-category="admin" onclick="openLightbox(this)" />
+      <img src="images/projet 2/admin/messages.png" alt="Messages des clients" data-category="admin" onclick="openLightbox(this)" />
+    </div>
+  </section>
+
+  <!-- Partie Client -->
+  <section id="client" class="section">
+    <h2>Partie Client</h2>
+    <p>
+      Le site e-commerce "M&A Smartwatch" offre une expérience utilisateur fluide : accueil dynamique, pages produit, gestion du panier en temps réel, commande sécurisée, historique et gestion du profil client.
+    </p>
+
+    <ul class="features">
+      <li>Accueil avec présentation des produits</li>
+      <li>Ajout au panier et modification des quantités</li>
+      <li>Connexion et création de compte client</li>
+      <li>Validation de commande et confirmation</li>
+      <li>Historique des commandes</li>
+      <li>Formulaire de contact</li>
+      <li>Espace client : profil, logout</li>
+    </ul>
+
+      <div class="video-container">
+        <video controls width="100%" poster="images/projet 2/client/accueil.png">
+          <source src="images/projet 2/client.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la vidéo HTML5.
+        </video>
+      </div>
+
+
+    <div class="gallery">
+
+      <img src="images/projet 2/client/accueil.png" alt="Page d'accueil" data-category="client" onclick="openLightbox(this)"/>
+      <img src="images/projet 2/client/produit.png" alt="Page produit" data-category="client" onclick="openLightbox(this)" />
+      <img src="images/projet 2/client/panier.png" alt="Panier" data-category="client" onclick="openLightbox(this)" />
+      <img src="images/projet 2/client/confirmation.png" alt="Confirmation de commande" data-category="client" onclick="openLightbox(this)" />
+      <img src="images/projet 2/client/historique.png" alt="Historique des commandes" data-category="client" onclick="openLightbox(this)" />
+    </div>
+  </section>
+
+  <footer> 
+    <div class="container"> 
+      <p>&copy; 2025 Mohammadi Ali. Tous droits réservés.</p> 
+    </div> 
+  </footer> 
+  <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+<!-- Lightbox avec flèches -->
+  <div id="lightbox">
+    <span id="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Image agrandie" />
+    <span id="prev" onclick="changeImage(-1)">&#10094;</span>
+    <span id="next" onclick="changeImage(1)">&#10095;</span>
+  </div>
+
+
+</body>
+</html>

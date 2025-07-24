@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Personnel - Mohammadi Ali</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header class="sub-header">
+    <h1>Portfolio Personnel</h1>
+    <p>Un site interactif pour présenter mes projets et compétences</p>
+  </header>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    <ul id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#features">Fonctionnalités</a></li>
+      <li><a href="#technologies">Technologies</a></li>
+      <li><a href="#projet">projet</a></li>
+      
+    </ul>
+  </nav>
+  
+
+  <div class="container">
+
+    <section id="about" class="section">
+      <h2>À propos du projet</h2>
+      <p>Ce projet est un <strong>portfolio interactif</strong> développé en HTML, CSS et JavaScript. Il regroupe mes projets personnels, mes compétences en développement web, et mes liens professionnels.</p>
+      <p>Le site utilise un design responsive avec un menu mobile moderne et des effets dynamiques pour les images et la navigation.</p>
+    </section>
+
+    <section id="features" class="section">
+      <h2>Fonctionnalités clés</h2>
+      <ul class="features">
+        <li>Navigation responsive avec menu hamburger centré</li>
+        <li>Présentation de projets avec images, vidéos et description</li>
+        <li>Effet Lightbox pour afficher les images en grand</li>
+        <li>Bouton "retour en haut" animé</li>
+        <li>Section compétences avec icônes animées</li>
+      </ul>
+    </section>
+
+    <section id="technologies" class="section">
+      <h2>Technologies utilisées</h2>
+      <div class="technologies">
+        <div class="tech-item"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="tech-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="tech-item"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="tech-item"><i class="fab fa-php"></i> PHP (projets liés)</div>
+        <div class="tech-item"><i class="fas fa-database"></i> MySQL (projets liés)</div>
+      </div>
+    </section>
+
+    <section id="projet" class="section">
+      <h2>Vidéo du projet</h2>
+        <div class="video-container">
+        <video controls width="100%" poster="images/projet 3/portfolio.png">
+          <source src="images/projet 3/portfolio.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la vidéo HTML5.
+        </video>
+        </div>
+    </section>
+
+    <section class="section">
+      <h2>Galerie d’images</h2>
+      <div class="gallery">
+        <img src="images/projet 3/portfolio.png" alt="Header portfolio" data-category="portfolio" onclick="openLightbox(this)">
+        <img src="images/projet 3/portfolio1.png" alt="Section projets" data-category="portfolio" onclick="openLightbox(this)">
+        <img src="images/projet 3/portfolio2.png" alt="Section compétences" data-category="portfolio" onclick="openLightbox(this)">
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Code source</h2>
+      <p>Ce projet est disponible sur GitHub :</p>
+      <a href="https://github.com/ali97mohammadi/portfolio" target="_blank" class="btn-secondary">Voir sur GitHub</a>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mohammadi Ali. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <span id="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Image agrandie" />
+    <span id="prev" onclick="changeImage(-1)">&#10094;</span>
+    <span id="next" onclick="changeImage(1)">&#10095;</span>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
